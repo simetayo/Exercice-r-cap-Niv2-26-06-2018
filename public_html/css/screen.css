@@ -1,0 +1,159 @@
+body { 
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: #af1c52;
+}
+
+/* menu principale */
+
+.nav-main ul{ 
+    padding: 0;
+    margin:0;
+}
+
+.nav-main li{ 
+    list-style: none;
+}
+
+.nav-main a{
+    display: block;
+    padding:0.5rem 1rem;
+    color:white;
+    text-align: left;
+}
+
+.nav-main a:hover{
+    text-decoration: none;
+}
+
+.nav-main ul ul {
+    display: none;
+}
+
+
+.nav-langage li {
+    list-style-type: none;
+    display: inline-block;
+}
+.nav-langage a{ 
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+/*home page body*/
+body.home{
+    background: url('../images/background.png')fixed;
+}
+
+.slogan
+{
+    position:absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 50%;
+    height: 10rem;
+    right: 0;
+    bottom:0;
+}
+
+.logo 
+{ 
+    width: 150px;
+    height: 150px;
+}
+
+body.home .slogan img {
+    float: left;
+    width: 7rem;
+    height: auto;
+}
+
+.logo1 p {
+    font-size: 1.5rem;
+    padding: 1.6rem 2rem;
+}
+
+footer {
+    background: #af1c52;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+body.home footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        text-align: right;
+    }
+
+    .nav-main {
+        float: left;
+    }
+
+    .nav-main li {
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .nav-main ul ul {
+        position: absolute;
+        background: #af1c52;
+    }
+
+    .nav-main li:hover ul {
+        display: block;
+    }
+
+    .nav-main li li {
+        display: block;
+    }
+
+    .nav-langage {
+    }
+
+    body.home .slogan {
+        width: 70%;
+        top: 12rem;
+    }
+
+    body.home .slogan img {
+        width: 8rem;
+    }
+
+    body.home .slogan p {
+        padding: 2rem 2rem;
+    }
+
+    body.home {
+        background-size: cover;
+    }
+    .logo1{
+        position: absolute;
+    }
+
+}
+footer a{
+    color:yellow;
+    
+    
+}
+
+footer p{
+    color:white;
+}
